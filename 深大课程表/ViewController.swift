@@ -33,24 +33,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainViewController1 = storyboard.instantiateViewControllerWithIdentifier("firstView") as! mainViewController
-        mainViewController1.title = "星期一"
-        
-        v1.title = "星期一"
-        v1.view.backgroundColor = UIColor.cyanColor()
-        v2.title = "星期二"
-        v2.view.backgroundColor = UIColor.redColor()
-        v3.title = "星期三"
-        v3.view.backgroundColor = UIColor.grayColor()
-        v4.title = "星期四"
-        v4.view.backgroundColor = UIColor.yellowColor()
-        v5.title = "星期五"
-        v5.view.backgroundColor = UIColor.lightGrayColor()
-        v6.title = "星期六"
-        v6.view.backgroundColor = UIColor.lightGrayColor()
-      
-       
-        let skScNavC = SKScNavViewController(subViewControllers: [mainViewController1, v2, v3, v4, v5])
+        let MondayController1 = storyboard.instantiateViewControllerWithIdentifier("firstView") as! MondayController
+        MondayController1.title = "星期一"
+        let TuesdayController1 = storyboard.instantiateViewControllerWithIdentifier("secondView") as! TuesdayController
+        TuesdayController1.title = "星期二"
+        let WendesdayController1 = storyboard.instantiateViewControllerWithIdentifier("thirdView") as! WendesdayController
+        WendesdayController1.title = "星期三"
+        let ThursdayController1 = storyboard.instantiateViewControllerWithIdentifier("fourthView") as! ThursdayController
+        ThursdayController1.title = "星期四"
+        let FridayController1 = storyboard.instantiateViewControllerWithIdentifier("fifthView") as! FridayController
+        FridayController1.title = "星期五"
+        let skScNavC = SKScNavViewController(subViewControllers: [MondayController1, TuesdayController1, WendesdayController1, ThursdayController1, FridayController1])
         skScNavC.addParentController(self)
         getArrtitle()
     }

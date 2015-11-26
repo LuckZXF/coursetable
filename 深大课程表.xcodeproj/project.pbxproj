@@ -28,7 +28,7 @@
 		B0449F7E1BF4E898004180D1 /* SKLaunchMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449F781BF4E898004180D1 /* SKLaunchMenu.swift */; };
 		B0449F7F1BF4E898004180D1 /* SKLaunchMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449F791BF4E898004180D1 /* SKLaunchMenuItem.swift */; };
 		B0449F801BF4E898004180D1 /* SKScNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449F7A1BF4E898004180D1 /* SKScNavBar.swift */; };
-		B0449F821BF71DCA004180D1 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449F811BF71DCA004180D1 /* mainViewController.swift */; };
+		B0449F821BF71DCA004180D1 /* MondayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449F811BF71DCA004180D1 /* MondayController.swift */; };
 		B0449F871BFAB9DB004180D1 /* MainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449F841BFAB9DB004180D1 /* MainItem.swift */; };
 		B0449F881BFAB9DB004180D1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449F851BFAB9DB004180D1 /* DataModel.swift */; };
 		B0449F891BFAB9DB004180D1 /* MainListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449F861BFAB9DB004180D1 /* MainListController.swift */; };
@@ -50,6 +50,10 @@
 		B0449FB81BFC9EE7004180D1 /* MozMaterialDesignSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449FB61BFC9EE7004180D1 /* MozMaterialDesignSpinner.swift */; };
 		B0449FBA1BFC9F73004180D1 /* 微博logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0449FB91BFC9F73004180D1 /* 微博logo@2x.png */; };
 		B0449FBD1BFD6695004180D1 /* WholeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449FBC1BFD6695004180D1 /* WholeItem.swift */; };
+		B07206201C06FC8F0024820C /* TuesdayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072061F1C06FC8F0024820C /* TuesdayController.swift */; };
+		B07206221C06FCA50024820C /* WendesdayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07206211C06FCA50024820C /* WendesdayController.swift */; };
+		B07206241C06FCCE0024820C /* ThursdayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07206231C06FCCE0024820C /* ThursdayController.swift */; };
+		B07206261C06FCDC0024820C /* FridayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07206251C06FCDC0024820C /* FridayController.swift */; };
 		B0B57CC41BFEFAA900947D7A /* PersonmsgData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B57CC31BFEFAA900947D7A /* PersonmsgData.swift */; };
 		FB735F8B1424B50447AE4789 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D60C60C16BCEE9213406280 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -101,7 +105,7 @@
 		B0449F781BF4E898004180D1 /* SKLaunchMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKLaunchMenu.swift; sourceTree = "<group>"; };
 		B0449F791BF4E898004180D1 /* SKLaunchMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKLaunchMenuItem.swift; sourceTree = "<group>"; };
 		B0449F7A1BF4E898004180D1 /* SKScNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKScNavBar.swift; sourceTree = "<group>"; };
-		B0449F811BF71DCA004180D1 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		B0449F811BF71DCA004180D1 /* MondayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayController.swift; sourceTree = "<group>"; };
 		B0449F841BFAB9DB004180D1 /* MainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainItem.swift; sourceTree = "<group>"; };
 		B0449F851BFAB9DB004180D1 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		B0449F861BFAB9DB004180D1 /* MainListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,10 @@
 		B0449FB61BFC9EE7004180D1 /* MozMaterialDesignSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MozMaterialDesignSpinner.swift; sourceTree = "<group>"; };
 		B0449FB91BFC9F73004180D1 /* 微博logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微博logo@2x.png"; sourceTree = "<group>"; };
 		B0449FBC1BFD6695004180D1 /* WholeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WholeItem.swift; sourceTree = "<group>"; };
+		B072061F1C06FC8F0024820C /* TuesdayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuesdayController.swift; sourceTree = "<group>"; };
+		B07206211C06FCA50024820C /* WendesdayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WendesdayController.swift; sourceTree = "<group>"; };
+		B07206231C06FCCE0024820C /* ThursdayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThursdayController.swift; sourceTree = "<group>"; };
+		B07206251C06FCDC0024820C /* FridayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridayController.swift; sourceTree = "<group>"; };
 		B0B57CC31BFEFAA900947D7A /* PersonmsgData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonmsgData.swift; sourceTree = "<group>"; };
 		DC8123F302D0B99703A6ABC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,7 +322,11 @@
 		B0449F951BFABA99004180D1 /* Weekdays */ = {
 			isa = PBXGroup;
 			children = (
-				B0449F811BF71DCA004180D1 /* mainViewController.swift */,
+				B0449F811BF71DCA004180D1 /* MondayController.swift */,
+				B072061F1C06FC8F0024820C /* TuesdayController.swift */,
+				B07206211C06FCA50024820C /* WendesdayController.swift */,
+				B07206231C06FCCE0024820C /* ThursdayController.swift */,
+				B07206251C06FCDC0024820C /* FridayController.swift */,
 			);
 			name = Weekdays;
 			sourceTree = "<group>";
@@ -572,14 +584,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07206261C06FCDC0024820C /* FridayController.swift in Sources */,
 				B0B57CC41BFEFAA900947D7A /* PersonmsgData.swift in Sources */,
 				B0449FA11BFC56D6004180D1 /* LoginViewController.swift in Sources */,
+				B07206241C06FCCE0024820C /* ThursdayController.swift in Sources */,
 				B0449FAF1BFC62B9004180D1 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				B0449FAE1BFC62B9004180D1 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				B0449F7D1BF4E898004180D1 /* SKMacros.swift in Sources */,
 				B0449F271BF4E72C004180D1 /* ViewController.swift in Sources */,
 				B0449FBD1BFD6695004180D1 /* WholeItem.swift in Sources */,
 				B0449FB11BFC62B9004180D1 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				B07206221C06FCA50024820C /* WendesdayController.swift in Sources */,
 				B0449F7E1BF4E898004180D1 /* SKLaunchMenu.swift in Sources */,
 				B0449F251BF4E72C004180D1 /* AppDelegate.swift in Sources */,
 				B011032A1C041EA80037BC45 /* coursepingjiaViewController.swift in Sources */,
@@ -594,6 +609,7 @@
 				B02FEC641C0311F3000C6B15 /* courseobject.swift in Sources */,
 				B0449F7F1BF4E898004180D1 /* SKLaunchMenuItem.swift in Sources */,
 				B0449F881BFAB9DB004180D1 /* DataModel.swift in Sources */,
+				B07206201C06FC8F0024820C /* TuesdayController.swift in Sources */,
 				B0449FB81BFC9EE7004180D1 /* MozMaterialDesignSpinner.swift in Sources */,
 				B0449F911BFABA27004180D1 /* ListDetailViewController.swift in Sources */,
 				B0449F871BFAB9DB004180D1 /* MainItem.swift in Sources */,
@@ -601,7 +617,7 @@
 				B0449F7B1BF4E898004180D1 /* SKScNavViewController.swift in Sources */,
 				B0449F991BFABB65004180D1 /* personalView.swift in Sources */,
 				B0449F801BF4E898004180D1 /* SKScNavBar.swift in Sources */,
-				B0449F821BF71DCA004180D1 /* mainViewController.swift in Sources */,
+				B0449F821BF71DCA004180D1 /* MondayController.swift in Sources */,
 				B0449F8F1BFAB9F3004180D1 /* iconPickerViewController.swift in Sources */,
 				B035BC791BFED90E00237F5A /* Personmsgitem.swift in Sources */,
 			);

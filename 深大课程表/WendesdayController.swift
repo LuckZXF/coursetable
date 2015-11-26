@@ -1,18 +1,18 @@
 //
-//  mainViewController.swift
+//  WendesdayController.swift
 //  深大课程表
 //
-//  Created by 赵希帆 on 15/11/14.
+//  Created by 赵希帆 on 15/11/26.
 //  Copyright © 2015年 赵希帆. All rights reserved.
 //
 
 import UIKit
 
-class mainViewController : UIViewController {
+class WendesdayController : UIViewController {
     @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url : NSURL! = NSURL(string: "http://www.shenzhendaxue.sinaapp.com")
+        let url : NSURL! = NSURL(string: "http://www.baidu.com")
         let request : NSURLRequest = NSURLRequest(URL: url)
         self.view.addSubview(webView)
         webView.loadRequest(request)

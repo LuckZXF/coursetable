@@ -789,10 +789,10 @@
             </objects>
             <point key="canvasLocation" x="-776" y="-11"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Monday Controller-->
         <scene sceneID="xzq-Q8-ilL">
             <objects>
-                <viewController storyboardIdentifier="firstView" id="SJH-pT-jc4" customClass="mainViewController" customModule="深大课程表" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstView" id="SJH-pT-jc4" customClass="MondayController" customModule="深大课程表" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="clH-WX-UPb"/>
                         <viewControllerLayoutGuide type="bottom" id="JVg-y8-kYh"/>
@@ -801,28 +801,163 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-0h-lB6">
-                                <rect key="frame" x="58" y="82" width="488" height="444"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-0h-lB6">
+                                <rect key="frame" x="10" y="20" width="570" height="480"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JVg-y8-kYh" firstAttribute="top" secondItem="Tji-0h-lB6" secondAttribute="bottom" constant="100" id="A1W-Ve-THy"/>
-                            <constraint firstItem="Tji-0h-lB6" firstAttribute="top" secondItem="clH-WX-UPb" secondAttribute="bottom" id="Nnj-eZ-fOM"/>
-                            <constraint firstItem="Tji-0h-lB6" firstAttribute="centerX" secondItem="Odd-US-gwA" secondAttribute="centerX" id="ZYc-zR-ljj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Tji-0h-lB6" secondAttribute="trailing" id="cTH-28-Fla"/>
-                            <constraint firstItem="Tji-0h-lB6" firstAttribute="centerX" secondItem="Odd-US-gwA" secondAttribute="centerX" id="lt7-h9-Alc"/>
-                            <constraint firstItem="Tji-0h-lB6" firstAttribute="leading" secondItem="Odd-US-gwA" secondAttribute="leadingMargin" constant="-10" id="qt4-Ew-DfD"/>
+                            <constraint firstItem="Tji-0h-lB6" firstAttribute="leading" secondItem="Odd-US-gwA" secondAttribute="leadingMargin" constant="-10" id="1et-9Z-O6V"/>
+                            <constraint firstItem="Tji-0h-lB6" firstAttribute="centerX" secondItem="Odd-US-gwA" secondAttribute="centerX" id="AIw-aI-kYL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tji-0h-lB6" secondAttribute="trailing" id="DrR-SW-cLh"/>
+                            <constraint firstItem="Tji-0h-lB6" firstAttribute="top" secondItem="clH-WX-UPb" secondAttribute="bottom" id="VRT-AF-q8D"/>
+                            <constraint firstItem="JVg-y8-kYh" firstAttribute="top" secondItem="Tji-0h-lB6" secondAttribute="bottom" constant="100" id="nAn-6M-QoY"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="Tji-0h-lB6" id="1Li-AZ-Gud"/>
+                        <outlet property="webView" destination="Tji-0h-lB6" id="iB0-SW-NM4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mlD-NU-ldK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-761" y="819"/>
+        </scene>
+        <!--Tuesday Controller-->
+        <scene sceneID="zZo-S7-97M">
+            <objects>
+                <viewController storyboardIdentifier="secondView" id="7S7-QV-Y0T" customClass="TuesdayController" customModule="深大课程表" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kb9-V5-tCh"/>
+                        <viewControllerLayoutGuide type="bottom" id="X4B-e1-ShU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GuD-TG-6Hv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjl-ZK-bfq">
+                                <rect key="frame" x="10" y="20" width="570" height="480"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hjl-ZK-bfq" firstAttribute="centerX" secondItem="GuD-TG-6Hv" secondAttribute="centerX" id="3Bs-b2-qJj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hjl-ZK-bfq" secondAttribute="trailing" id="K71-SG-qsR"/>
+                            <constraint firstItem="X4B-e1-ShU" firstAttribute="top" secondItem="hjl-ZK-bfq" secondAttribute="bottom" constant="100" id="Kf5-d0-05i"/>
+                            <constraint firstItem="hjl-ZK-bfq" firstAttribute="leading" secondItem="GuD-TG-6Hv" secondAttribute="leadingMargin" constant="-10" id="Rqw-on-ndn"/>
+                            <constraint firstItem="hjl-ZK-bfq" firstAttribute="top" secondItem="kb9-V5-tCh" secondAttribute="bottom" id="eVg-kf-h5i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="hjl-ZK-bfq" id="A7a-lo-k1S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOj-zL-1dA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-751" y="1561"/>
+        </scene>
+        <!--Wendesday Controller-->
+        <scene sceneID="lzI-vJ-trZ">
+            <objects>
+                <viewController storyboardIdentifier="thirdView" id="ihV-WD-H5c" customClass="WendesdayController" customModule="深大课程表" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6TA-B4-G4p"/>
+                        <viewControllerLayoutGuide type="bottom" id="86e-R4-YLG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oWU-1X-pk0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9L-y4-Trk">
+                                <rect key="frame" x="10" y="20" width="570" height="480"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="t9L-y4-Trk" secondAttribute="trailing" id="Lsp-bH-wZW"/>
+                            <constraint firstItem="t9L-y4-Trk" firstAttribute="centerX" secondItem="oWU-1X-pk0" secondAttribute="centerX" id="Y58-ak-UkV"/>
+                            <constraint firstItem="t9L-y4-Trk" firstAttribute="leading" secondItem="oWU-1X-pk0" secondAttribute="leadingMargin" constant="-10" id="l91-Le-bXB"/>
+                            <constraint firstItem="86e-R4-YLG" firstAttribute="top" secondItem="t9L-y4-Trk" secondAttribute="bottom" constant="100" id="sFO-gf-XT1"/>
+                            <constraint firstItem="t9L-y4-Trk" firstAttribute="top" secondItem="6TA-B4-G4p" secondAttribute="bottom" id="tkB-88-YQI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="t9L-y4-Trk" id="7ND-Vc-e4B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ban-AT-um8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-786" y="2233"/>
+        </scene>
+        <!--Thursday Controller-->
+        <scene sceneID="bTe-b3-TAx">
+            <objects>
+                <viewController storyboardIdentifier="fourthView" id="ZfZ-Pb-e9W" customClass="ThursdayController" customModule="深大课程表" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PYl-pt-J6p"/>
+                        <viewControllerLayoutGuide type="bottom" id="POb-Wb-0fl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kKd-Ss-5UV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Od8-15-kfj">
+                                <rect key="frame" x="10" y="20" width="570" height="480"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="POb-Wb-0fl" firstAttribute="top" secondItem="Od8-15-kfj" secondAttribute="bottom" constant="100" id="0q3-pM-CNU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Od8-15-kfj" secondAttribute="trailing" id="4Z5-9f-Le3"/>
+                            <constraint firstItem="Od8-15-kfj" firstAttribute="centerX" secondItem="kKd-Ss-5UV" secondAttribute="centerX" id="L0a-TX-Lhn"/>
+                            <constraint firstItem="Od8-15-kfj" firstAttribute="top" secondItem="PYl-pt-J6p" secondAttribute="bottom" id="Wvo-Qt-gIu"/>
+                            <constraint firstItem="Od8-15-kfj" firstAttribute="leading" secondItem="kKd-Ss-5UV" secondAttribute="leadingMargin" constant="-10" id="ega-Ps-4cJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Od8-15-kfj" id="Tg0-7G-uul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYI-Ls-YIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-755" y="2915"/>
+        </scene>
+        <!--Friday Controller-->
+        <scene sceneID="3oG-ID-dPB">
+            <objects>
+                <viewController storyboardIdentifier="fifthView" id="W4X-jh-Gvk" customClass="FridayController" customModule="深大课程表" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cuz-RE-9St"/>
+                        <viewControllerLayoutGuide type="bottom" id="0dE-Yz-crg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uJ8-Cn-9uw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6o-FM-GRW">
+                                <rect key="frame" x="10" y="20" width="570" height="480"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="e6o-FM-GRW" secondAttribute="trailing" id="7xI-sD-kEd"/>
+                            <constraint firstItem="e6o-FM-GRW" firstAttribute="centerX" secondItem="uJ8-Cn-9uw" secondAttribute="centerX" id="DFJ-hb-3qM"/>
+                            <constraint firstItem="e6o-FM-GRW" firstAttribute="leading" secondItem="uJ8-Cn-9uw" secondAttribute="leadingMargin" constant="-10" id="d5b-o0-72z"/>
+                            <constraint firstItem="e6o-FM-GRW" firstAttribute="top" secondItem="Cuz-RE-9St" secondAttribute="bottom" id="iCr-Yy-TNl"/>
+                            <constraint firstItem="0dE-Yz-crg" firstAttribute="top" secondItem="e6o-FM-GRW" secondAttribute="bottom" constant="100" id="s8S-Yk-WPO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="e6o-FM-GRW" id="MqE-UN-p78"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sE-UF-zZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-761" y="3629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MxZ-xR-1mC">
@@ -1048,12 +1183,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saQ-fQ-xal">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6818839C-F540-49CC-A6B1-EA78D22298AA" translatesAutoresizingMaskIntoConstraints="NO" id="ne4-jY-aGd">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="60FE78AA-A739-49EB-AD70-D42E245F2C03" translatesAutoresizingMaskIntoConstraints="NO" id="ne4-jY-aGd">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFx-vT-U4w">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" image="BDE867A9-EBA2-41DB-830B-7FB20BE525EA">
+                                        <state key="normal" image="8BD6FB75-14CF-4CF8-B972-0283D3682E76">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -1063,7 +1198,7 @@
                                             <constraint firstAttribute="width" constant="34" id="Axf-rZ-VjZ"/>
                                             <constraint firstAttribute="height" constant="34" id="cCd-Di-D2p"/>
                                         </constraints>
-                                        <state key="normal" image="18FEA017-76A9-408D-B1CF-4EF6B6E77779">
+                                        <state key="normal" image="27C88868-DEB8-45EE-8A50-B17E206603B9">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="default">
@@ -1085,7 +1220,7 @@
                                             <constraint firstAttribute="height" constant="34" id="Rtk-3M-EY8"/>
                                             <constraint firstAttribute="width" constant="34" id="SE0-rk-WW3"/>
                                         </constraints>
-                                        <state key="normal" image="56C2BF3D-C2CD-4373-8379-E520B0677BE8">
+                                        <state key="normal" image="DCB2EAB7-B429-479A-B044-62275867A1AD">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="default">
@@ -1507,7 +1642,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="赵希帆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9h-sL-iW0">
                                                     <rect key="frame" x="36" y="34" width="72" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1587,7 +1722,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="18FEA017-76A9-408D-B1CF-4EF6B6E77779" width="10" height="50">
+        <image name="27C88868-DEB8-45EE-8A50-B17E206603B9" width="10" height="50">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
 GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
@@ -1603,7 +1738,7 @@ AZ4BpgGzAbgBugG8AcEByQHMAdEB2QHcAe4B8QH2AAAAAAAAAgEAAAAAAAAAPwAAAAAAAAAAAAAAAAAA
 Afg
 </mutableData>
         </image>
-        <image name="56C2BF3D-C2CD-4373-8379-E520B0677BE8" width="10" height="50">
+        <image name="60FE78AA-A739-49EB-AD70-D42E245F2C03" width="10" height="50">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
 GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
@@ -1619,7 +1754,7 @@ AZ4BpgGzAbgBugG8AcEByQHMAdEB2QHcAe4B8QH2AAAAAAAAAgEAAAAAAAAAPwAAAAAAAAAAAAAAAAAA
 Afg
 </mutableData>
         </image>
-        <image name="6818839C-F540-49CC-A6B1-EA78D22298AA" width="10" height="50">
+        <image name="8BD6FB75-14CF-4CF8-B972-0283D3682E76" width="10" height="50">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
 GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
@@ -1635,7 +1770,7 @@ AZ4BpgGzAbgBugG8AcEByQHMAdEB2QHcAe4B8QH2AAAAAAAAAgEAAAAAAAAAPwAAAAAAAAAAAAAAAAAA
 Afg
 </mutableData>
         </image>
-        <image name="BDE867A9-EBA2-41DB-830B-7FB20BE525EA" width="10" height="50">
+        <image name="DCB2EAB7-B429-479A-B044-62275867A1AD" width="10" height="50">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
 GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
