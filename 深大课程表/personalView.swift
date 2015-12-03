@@ -56,10 +56,20 @@ class personalView : UITableViewController , UIActionSheetDelegate , UIImagePick
             UIGraphicsEndImageContext()
             cell!.textLabel?.text = stuname
             cell!.detailTextLabel?.text = stuid
-            let button : UIButton = UIButton(frame: CGRectMake(0,0,76,76))
+            var tapGesture = UITapGestureRecognizer(target: self, action: "showImageDetail")
+            let view : UIView = UIView(frame: CGRectMake(0,0,76,76))
+            view.addGestureRecognizer(tapGesture)
+            let longPressGesture = UILongPressGestureRecognizer(target: self, action: "chooseImageBtnPressed:")
+            longPressGesture.minimumPressDuration = 1
+            longPressGesture.allowableMovement = 15
+            longPressGesture.numberOfTouchesRequired = 1
+            view.addGestureRecognizer(longPressGesture)
+            cell.contentView.addSubview(view)
+           // cell.imageView?.addGestureRecognizer(tapGesture)
+          //  let button : UIButton = UIButton(frame: CGRectMake(0,0,76,76))
             
-            button.addTarget(self, action: "chooseImageBtnPressed", forControlEvents: UIControlEvents.TouchDown)
-            cell.contentView.addSubview(button)
+          //  button.addTarget(self, action: "chooseImageBtnPressed", forControlEvents: UIControlEvents.TouchDown)
+          //  cell.contentView.addSubview(button)
             //cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
             return cell
         }
@@ -95,6 +105,8 @@ class personalView : UITableViewController , UIActionSheetDelegate , UIImagePick
         }
         return cell
     }
+    
+    
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 3 {
@@ -171,17 +183,18 @@ class personalView : UITableViewController , UIActionSheetDelegate , UIImagePick
         
     }
     
-    func chooseImageBtnPressed() {
+    func chooseImageBtnPressed(sender : UILongPressGestureRecognizer) {
         print("qwer")
-        let sheet:UIActionSheet
-        if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
-            sheet = UIActionSheet(title: "选择", delegate: self, cancelButtonTitle: nil, destructiveButtonTitle: "从相册中选择", otherButtonTitles: "拍照", "取消")
-        }else{
-            sheet = UIActionSheet(title: "选择", delegate: self, cancelButtonTitle: nil , destructiveButtonTitle: "从相册中选择", otherButtonTitles: "取消")
+        if sender.state == UIGestureRecognizerState.Began{
+            let sheet:UIActionSheet
+            if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
+                sheet = UIActionSheet(title: "选择", delegate: self, cancelButtonTitle: nil, destructiveButtonTitle: "从相册中选择", otherButtonTitles: "拍照", "取消")
+            }else{
+                sheet = UIActionSheet(title: "选择", delegate: self, cancelButtonTitle: nil , destructiveButtonTitle: "从相册中选择", otherButtonTitles: "取消")
+            }
+            sheet.tag = 255
+            sheet.showInView(self.view)
         }
-        sheet.tag = 255
-        sheet.showInView(self.view)
-  
     }
     
   /*  @IBAction func chooseImageBtnPressed(sender: AnyObject) {
@@ -271,5 +284,28 @@ class personalView : UITableViewController , UIActionSheetDelegate , UIImagePick
             })
         }
     }
+    
+    func showImageDetail(){
+        let view : UIView = UIView(frame: CGRectMake(0,0,UIScreen.mainScreen().bounds.width,UIScreen.mainScreen().bounds.height))
+        view.backgroundColor = UIColor(red: 40.0/255.0, green: 40.0/255.0, blue: 50.0/255.0, alpha: 0.8)
+        self.view.addSubview(view)
+        var tapGesture = UITapGestureRecognizer(target: self, action: "back")
+        view.addGestureRecognizer(tapGesture)
+        var personimage : UIImage?
+        let fullPath = dataFilePath()
+        personimage = UIImage(contentsOfFile: fullPath as String)
+        let imageView : UIImageView = UIImageView(frame: CGRectMake(0, UIScreen.mainScreen().bounds.height / 2 - 210, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height / 2 ))
+        imageView.image = personimage
+        view.addSubview(imageView)
+    }
+    
+    func back(){
+        let subviews = self.view.subviews
+        let count = subviews.count
+        let view = subviews[count-1]
+        view.removeFromSuperview()
+        
+    }
+    
     
 }
