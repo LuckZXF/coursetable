@@ -28,6 +28,9 @@ class coursepingjiaViewController : UIViewController,UITextFieldDelegate,UITable
         tv.delegate = self
         tv.dataSource = self
         textField.delegate = self
+        tv.estimatedRowHeight = 44.0
+        tv.rowHeight = UITableViewAutomaticDimension
+
         let leftbutton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Cancel, target: self, action: "goback")
         navigationItem.leftBarButtonItem = leftbutton
         textField.placeholder = "输入消息内容"
@@ -51,6 +54,8 @@ class coursepingjiaViewController : UIViewController,UITextFieldDelegate,UITable
         tv.headerView?.beginRefreshing()
         tv.headerView?.endRefreshing()
         tv.footerView = XWRefreshAutoNormalFooter(target: self, action: "downPullLoadData")
+        tv.footerView?.beginRefreshing()
+        tv.footerView?.endRefreshing()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -70,16 +75,17 @@ class coursepingjiaViewController : UIViewController,UITextFieldDelegate,UITable
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell : UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("Cell")
+        var cell : coursepingjiacell = tableView.dequeueReusableCellWithIdentifier("Cell") as! coursepingjiacell
+       // var cell : UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("Cell")
       //  cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
       //cell.textLabel?.text = "我爱你"
       //cell.selectionStyle = .None
         let index = indexPath.row
-        var stulabel : UILabel = cell.viewWithTag(1) as! UILabel
-        var stupingjiatextView : UITextView = cell.viewWithTag(2) as! UITextView
-        stulabel.text = studentname[index]
-        stupingjiatextView.text = studentpingjia[index]
-        stupingjiatextView.delegate = self
+     //   var stulabel : UILabel = cell.viewWithTag(1) as! UILabel
+    //    var stupingjiatextView : UITextView = cell.viewWithTag(2) as! UITextView
+        cell.studentname.text = studentname[index]
+        cell.studentpingjia.text = studentpingjia[index]
+        
         return cell
     }
     
@@ -249,12 +255,13 @@ class coursepingjiaViewController : UIViewController,UITextFieldDelegate,UITable
     func downPullLoadData(){
         var timer1 : NSTimer?
         timer1 = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "donwLoadOff", userInfo: nil, repeats: false)
+        //self.tv.footerView?.endRefreshing()
         
     }
     
     func donwLoadOff(){
         print("jiazai")
-        self.tv.reloadData()
+       // self.tv.reloadData()
         self.tv.footerView?.endRefreshing()
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00D9EFB1C1979C5004ABB8D /* coursepingjiacell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D9EFA1C1979C5004ABB8D /* coursepingjiacell.swift */; };
 		B011032A1C041EA80037BC45 /* coursepingjiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01103291C041EA80037BC45 /* coursepingjiaViewController.swift */; };
 		B0191A861C05B3F400EEB5E4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0191A851C05B3F400EEB5E4 /* icon.png */; };
 		B0191A891C06AD2800EEB5E4 /* tabbar2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0191A871C06AD2800EEB5E4 /* tabbar2.png */; };
@@ -91,6 +92,7 @@
 /* Begin PBXFileReference section */
 		5D60C60C16BCEE9213406280 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EE4F135683DA0FF73975F6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B00D9EFA1C1979C5004ABB8D /* coursepingjiacell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coursepingjiacell.swift; sourceTree = "<group>"; };
 		B01103291C041EA80037BC45 /* coursepingjiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coursepingjiaViewController.swift; sourceTree = "<group>"; };
 		B0191A851C05B3F400EEB5E4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B0191A871C06AD2800EEB5E4 /* tabbar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar2.png; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				B02FEC611C0306A0000C6B15 /* addcourseViewController.swift */,
 				B02FEC631C0311F3000C6B15 /* courseobject.swift */,
 				B01103291C041EA80037BC45 /* coursepingjiaViewController.swift */,
+				B00D9EFA1C1979C5004ABB8D /* coursepingjiacell.swift */,
 			);
 			name = "课程评价";
 			sourceTree = "<group>";
@@ -687,6 +690,7 @@
 				B0449FB11BFC62B9004180D1 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				B07206221C06FCA50024820C /* WendesdayController.swift in Sources */,
 				B0449F7E1BF4E898004180D1 /* SKLaunchMenu.swift in Sources */,
+				B00D9EFB1C1979C5004ABB8D /* coursepingjiacell.swift in Sources */,
 				B0449F251BF4E72C004180D1 /* AppDelegate.swift in Sources */,
 				B011032A1C041EA80037BC45 /* coursepingjiaViewController.swift in Sources */,
 				B0449F931BFABA3B004180D1 /* Checklist.swift in Sources */,
