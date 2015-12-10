@@ -289,7 +289,7 @@ class personalView : UITableViewController , UIActionSheetDelegate , UIImagePick
         let view : UIView = UIView(frame: CGRectMake(0,0,UIScreen.mainScreen().bounds.width,UIScreen.mainScreen().bounds.height))
         view.backgroundColor = UIColor(red: 40.0/255.0, green: 40.0/255.0, blue: 50.0/255.0, alpha: 0.8)
         self.view.addSubview(view)
-        var tapGesture = UITapGestureRecognizer(target: self, action: "back")
+        let tapGesture = UITapGestureRecognizer(target: self, action: "back")
         view.addGestureRecognizer(tapGesture)
         var personimage : UIImage?
         let fullPath = dataFilePath()

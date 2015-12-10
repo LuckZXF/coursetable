@@ -17,3 +17,7 @@ var stuid : String!
 var courseArray : NSArray = NSArray()
 var arrTitle : [String]!
 var arrDetail : [String]!
+var pingjia_courseid : String!
+var pingjia_coursename : String!
+var pingjia_courseteacher : String!
+var pingjia_type : Int!

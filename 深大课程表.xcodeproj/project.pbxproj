@@ -50,6 +50,19 @@
 		B0449FB81BFC9EE7004180D1 /* MozMaterialDesignSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449FB61BFC9EE7004180D1 /* MozMaterialDesignSpinner.swift */; };
 		B0449FBA1BFC9F73004180D1 /* 微博logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0449FB91BFC9F73004180D1 /* 微博logo@2x.png */; };
 		B0449FBD1BFD6695004180D1 /* WholeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0449FBC1BFD6695004180D1 /* WholeItem.swift */; };
+		B04CBBB01C19300C009D08F5 /* XWConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBB9F1C19300C009D08F5 /* XWConst.swift */; };
+		B04CBBB11C19300C009D08F5 /* XWRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBA01C19300C009D08F5 /* XWRefreshComponent.swift */; };
+		B04CBBB21C19300C009D08F5 /* XWShortcutMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBA11C19300C009D08F5 /* XWShortcutMethod.swift */; };
+		B04CBBB31C19300C009D08F5 /* XWRefreshAutoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBA31C19300C009D08F5 /* XWRefreshAutoFooter.swift */; };
+		B04CBBB41C19300C009D08F5 /* XWRefreshAutoNormalFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBA41C19300C009D08F5 /* XWRefreshAutoNormalFooter.swift */; };
+		B04CBBB51C19300C009D08F5 /* XWRefreshAutoStateFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBA51C19300C009D08F5 /* XWRefreshAutoStateFooter.swift */; };
+		B04CBBB61C19300C009D08F5 /* XWRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBA61C19300C009D08F5 /* XWRefreshFooter.swift */; };
+		B04CBBB71C19300C009D08F5 /* XWRefreshGifHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBA81C19300C009D08F5 /* XWRefreshGifHeader.swift */; };
+		B04CBBB81C19300C009D08F5 /* XWRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBA91C19300C009D08F5 /* XWRefreshHeader.swift */; };
+		B04CBBB91C19300C009D08F5 /* XWRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBAA1C19300C009D08F5 /* XWRefreshNormalHeader.swift */; };
+		B04CBBBA1C19300C009D08F5 /* XWRefreshStateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBAB1C19300C009D08F5 /* XWRefreshStateHeader.swift */; };
+		B04CBBBB1C19300C009D08F5 /* UIScrollViewExtension-XW.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CBBAD1C19300C009D08F5 /* UIScrollViewExtension-XW.swift */; };
+		B04CBBBC1C19300C009D08F5 /* xw_icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B04CBBAF1C19300C009D08F5 /* xw_icon.bundle */; };
 		B07206201C06FC8F0024820C /* TuesdayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B072061F1C06FC8F0024820C /* TuesdayController.swift */; };
 		B07206221C06FCA50024820C /* WendesdayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07206211C06FCA50024820C /* WendesdayController.swift */; };
 		B07206241C06FCCE0024820C /* ThursdayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07206231C06FCCE0024820C /* ThursdayController.swift */; };
@@ -132,6 +145,19 @@
 		B0449FB61BFC9EE7004180D1 /* MozMaterialDesignSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MozMaterialDesignSpinner.swift; sourceTree = "<group>"; };
 		B0449FB91BFC9F73004180D1 /* 微博logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微博logo@2x.png"; sourceTree = "<group>"; };
 		B0449FBC1BFD6695004180D1 /* WholeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WholeItem.swift; sourceTree = "<group>"; };
+		B04CBB9F1C19300C009D08F5 /* XWConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWConst.swift; sourceTree = "<group>"; };
+		B04CBBA01C19300C009D08F5 /* XWRefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshComponent.swift; sourceTree = "<group>"; };
+		B04CBBA11C19300C009D08F5 /* XWShortcutMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWShortcutMethod.swift; sourceTree = "<group>"; };
+		B04CBBA31C19300C009D08F5 /* XWRefreshAutoFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshAutoFooter.swift; sourceTree = "<group>"; };
+		B04CBBA41C19300C009D08F5 /* XWRefreshAutoNormalFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshAutoNormalFooter.swift; sourceTree = "<group>"; };
+		B04CBBA51C19300C009D08F5 /* XWRefreshAutoStateFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshAutoStateFooter.swift; sourceTree = "<group>"; };
+		B04CBBA61C19300C009D08F5 /* XWRefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshFooter.swift; sourceTree = "<group>"; };
+		B04CBBA81C19300C009D08F5 /* XWRefreshGifHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshGifHeader.swift; sourceTree = "<group>"; };
+		B04CBBA91C19300C009D08F5 /* XWRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshHeader.swift; sourceTree = "<group>"; };
+		B04CBBAA1C19300C009D08F5 /* XWRefreshNormalHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshNormalHeader.swift; sourceTree = "<group>"; };
+		B04CBBAB1C19300C009D08F5 /* XWRefreshStateHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XWRefreshStateHeader.swift; sourceTree = "<group>"; };
+		B04CBBAD1C19300C009D08F5 /* UIScrollViewExtension-XW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollViewExtension-XW.swift"; sourceTree = "<group>"; };
+		B04CBBAF1C19300C009D08F5 /* xw_icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = xw_icon.bundle; sourceTree = "<group>"; };
 		B072061F1C06FC8F0024820C /* TuesdayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuesdayController.swift; sourceTree = "<group>"; };
 		B07206211C06FCA50024820C /* WendesdayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WendesdayController.swift; sourceTree = "<group>"; };
 		B07206231C06FCCE0024820C /* ThursdayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThursdayController.swift; sourceTree = "<group>"; };
@@ -217,6 +243,7 @@
 		B0449F231BF4E72C004180D1 /* 深大课程表 */ = {
 			isa = PBXGroup;
 			children = (
+				B04CBB9D1C19300C009D08F5 /* XWSwiftRefresh */,
 				B0191A8B1C06DD7B00EEB5E4 /* 引导页 */,
 				B0191A851C05B3F400EEB5E4 /* icon.png */,
 				B02FEC601C03067D000C6B15 /* 课程评价 */,
@@ -402,6 +429,66 @@
 			name = Whole;
 			sourceTree = "<group>";
 		};
+		B04CBB9D1C19300C009D08F5 /* XWSwiftRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B04CBB9E1C19300C009D08F5 /* common */,
+				B04CBBA21C19300C009D08F5 /* Footer */,
+				B04CBBA71C19300C009D08F5 /* Header */,
+				B04CBBAC1C19300C009D08F5 /* Helper */,
+				B04CBBAE1C19300C009D08F5 /* Icon */,
+			);
+			path = XWSwiftRefresh;
+			sourceTree = "<group>";
+		};
+		B04CBB9E1C19300C009D08F5 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B04CBB9F1C19300C009D08F5 /* XWConst.swift */,
+				B04CBBA01C19300C009D08F5 /* XWRefreshComponent.swift */,
+				B04CBBA11C19300C009D08F5 /* XWShortcutMethod.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		B04CBBA21C19300C009D08F5 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				B04CBBA31C19300C009D08F5 /* XWRefreshAutoFooter.swift */,
+				B04CBBA41C19300C009D08F5 /* XWRefreshAutoNormalFooter.swift */,
+				B04CBBA51C19300C009D08F5 /* XWRefreshAutoStateFooter.swift */,
+				B04CBBA61C19300C009D08F5 /* XWRefreshFooter.swift */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		B04CBBA71C19300C009D08F5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				B04CBBA81C19300C009D08F5 /* XWRefreshGifHeader.swift */,
+				B04CBBA91C19300C009D08F5 /* XWRefreshHeader.swift */,
+				B04CBBAA1C19300C009D08F5 /* XWRefreshNormalHeader.swift */,
+				B04CBBAB1C19300C009D08F5 /* XWRefreshStateHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		B04CBBAC1C19300C009D08F5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B04CBBAD1C19300C009D08F5 /* UIScrollViewExtension-XW.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B04CBBAE1C19300C009D08F5 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B04CBBAF1C19300C009D08F5 /* xw_icon.bundle */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
 		DBFBD1493FA186DC0C7D545F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0449F2F1BF4E72C004180D1 /* LaunchScreen.storyboard in Resources */,
+				B04CBBBC1C19300C009D08F5 /* xw_icon.bundle in Resources */,
 				B0191A8A1C06AD2800EEB5E4 /* tabbar22.png in Resources */,
 				B0191A891C06AD2800EEB5E4 /* tabbar2.png in Resources */,
 				B0449FA41BFC5BB8004180D1 /* login.jpg in Resources */,
@@ -590,7 +678,10 @@
 				B07206241C06FCCE0024820C /* ThursdayController.swift in Sources */,
 				B0449FAF1BFC62B9004180D1 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				B0449FAE1BFC62B9004180D1 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				B04CBBB21C19300C009D08F5 /* XWShortcutMethod.swift in Sources */,
+				B04CBBB81C19300C009D08F5 /* XWRefreshHeader.swift in Sources */,
 				B0449F7D1BF4E898004180D1 /* SKMacros.swift in Sources */,
+				B04CBBB71C19300C009D08F5 /* XWRefreshGifHeader.swift in Sources */,
 				B0449F271BF4E72C004180D1 /* ViewController.swift in Sources */,
 				B0449FBD1BFD6695004180D1 /* WholeItem.swift in Sources */,
 				B0449FB11BFC62B9004180D1 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
@@ -599,15 +690,20 @@
 				B0449F251BF4E72C004180D1 /* AppDelegate.swift in Sources */,
 				B011032A1C041EA80037BC45 /* coursepingjiaViewController.swift in Sources */,
 				B0449F931BFABA3B004180D1 /* Checklist.swift in Sources */,
+				B04CBBBA1C19300C009D08F5 /* XWRefreshStateHeader.swift in Sources */,
 				B0449F8D1BFAB9F3004180D1 /* MainController.swift in Sources */,
+				B04CBBB01C19300C009D08F5 /* XWConst.swift in Sources */,
 				B0449FB01BFC62B9004180D1 /* TPKeyboardAvoidingTableView.m in Sources */,
 				B02FEC5F1C02BB30000C6B15 /* coursesViewController.swift in Sources */,
 				B0191A8D1C06DD9E00EEB5E4 /* GuideVC.swift in Sources */,
 				B0449F891BFAB9DB004180D1 /* MainListController.swift in Sources */,
 				B02FEC621C0306A0000C6B15 /* addcourseViewController.swift in Sources */,
 				B0449F8E1BFAB9F3004180D1 /* AllListViewController.swift in Sources */,
+				B04CBBB51C19300C009D08F5 /* XWRefreshAutoStateFooter.swift in Sources */,
 				B02FEC641C0311F3000C6B15 /* courseobject.swift in Sources */,
 				B0449F7F1BF4E898004180D1 /* SKLaunchMenuItem.swift in Sources */,
+				B04CBBB31C19300C009D08F5 /* XWRefreshAutoFooter.swift in Sources */,
+				B04CBBB91C19300C009D08F5 /* XWRefreshNormalHeader.swift in Sources */,
 				B0449F881BFAB9DB004180D1 /* DataModel.swift in Sources */,
 				B07206201C06FC8F0024820C /* TuesdayController.swift in Sources */,
 				B0449FB81BFC9EE7004180D1 /* MozMaterialDesignSpinner.swift in Sources */,
@@ -617,8 +713,12 @@
 				B0449F7B1BF4E898004180D1 /* SKScNavViewController.swift in Sources */,
 				B0449F991BFABB65004180D1 /* personalView.swift in Sources */,
 				B0449F801BF4E898004180D1 /* SKScNavBar.swift in Sources */,
+				B04CBBB11C19300C009D08F5 /* XWRefreshComponent.swift in Sources */,
+				B04CBBBB1C19300C009D08F5 /* UIScrollViewExtension-XW.swift in Sources */,
 				B0449F821BF71DCA004180D1 /* MondayController.swift in Sources */,
+				B04CBBB41C19300C009D08F5 /* XWRefreshAutoNormalFooter.swift in Sources */,
 				B0449F8F1BFAB9F3004180D1 /* iconPickerViewController.swift in Sources */,
+				B04CBBB61C19300C009D08F5 /* XWRefreshFooter.swift in Sources */,
 				B035BC791BFED90E00237F5A /* Personmsgitem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

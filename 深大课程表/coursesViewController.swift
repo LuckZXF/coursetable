@@ -101,6 +101,8 @@ class coursesViewController : UIViewController , UISearchBarDelegate ,UITableVie
                 view.show()
             }
             else{
+                pingjia_courseid = searchBar.text!
+                pingjia_type = 0
                 courseArray = coursearray.copy() as! NSArray
                 let controller : UINavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("text1") as! UINavigationController
                 self.presentViewController(controller, animated: true, completion: nil)
@@ -134,6 +136,9 @@ class coursesViewController : UIViewController , UISearchBarDelegate ,UITableVie
                 view.show()
             }
             else{
+                pingjia_coursename = coursename
+                pingjia_courseteacher = courseteacher
+                pingjia_type = 1
                 courseArray = coursearray.copy() as! NSArray
                 let controller : UINavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("text1") as! UINavigationController
                 self.presentViewController(controller, animated: true, completion: nil)

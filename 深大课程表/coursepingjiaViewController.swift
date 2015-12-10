@@ -47,6 +47,10 @@ class coursepingjiaViewController : UIViewController,UITextFieldDelegate,UITable
         course_name = courseArray[0]["coursename"] as! String
         course_teacher = courseArray[0]["course_teachername"] as! String
         self.navigationItem.title = course_name
+        tv.headerView = XWRefreshNormalHeader(target: self, action: "upPullLoadData")
+        tv.headerView?.beginRefreshing()
+        tv.headerView?.endRefreshing()
+        tv.footerView = XWRefreshAutoNormalFooter(target: self, action: "downPullLoadData")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -192,6 +196,66 @@ class coursepingjiaViewController : UIViewController,UITextFieldDelegate,UITable
     
     func textFieldDidEndEditing(textField: UITextField) {
         textField.text = ""
+    }
+    
+    func upPullLoadData(){
+        manager.requestSerializer = zxf
+        manager.responseSerializer = fxz
+        if pingjia_type == 0 {
+            let params : Dictionary<String,String> = ["courseid" : pingjia_courseid]
+            manager.POST("http://www.shendakebiao.sinaapp.com/index.php/Home/Index/searchcourse", parameters: params, success: { (operation: AFHTTPRequestOperation!,
+                responseObject: AnyObject!) in
+                let responseDict = responseObject as! NSObject
+                let coursearray = responseDict as! NSArray
+                courseArray = coursearray.copy() as! NSArray
+         //       self.tv.reloadData()
+                
+                //  print(responseDict)
+                // let panduan = responseDict["result"] as! String
+                },
+                failure: { (operation: AFHTTPRequestOperation!,
+                    error: NSError!) in
+                    //Handle Error
+                    print(error)
+                    print(operation.responseString)
+            })
+
+        }
+        else if pingjia_type == 1 {
+            let params : Dictionary<String,String> = ["coursename" : pingjia_coursename,"course_teachername" : pingjia_courseteacher]
+            manager.POST("http://www.shendakebiao.sinaapp.com/index.php/Home/Index/searchcourse1", parameters: params, success: { (operation: AFHTTPRequestOperation!,
+                responseObject: AnyObject!) in
+                let responseDict = responseObject as! NSObject
+                let coursearray = responseDict as! NSArray
+                courseArray = coursearray.copy() as! NSArray
+             //   self.tv.reloadData()
+            
+                //  print(responseDict)
+                // let panduan = responseDict["result"] as! String
+                },
+                failure: { (operation: AFHTTPRequestOperation!,
+                    error: NSError!) in
+                    //Handle Error
+                    print(error)
+                    print(operation.responseString)
+            })
+
+        }
+        self.tv.reloadData()
+        self.tv.headerView?.endRefreshing()
+        
+    }
+    
+    func downPullLoadData(){
+        var timer1 : NSTimer?
+        timer1 = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "donwLoadOff", userInfo: nil, repeats: false)
+        
+    }
+    
+    func donwLoadOff(){
+        print("jiazai")
+        self.tv.reloadData()
+        self.tv.footerView?.endRefreshing()
     }
     
 }
