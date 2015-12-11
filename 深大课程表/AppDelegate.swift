@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var dataModel : DataModel?
     var personmsgData : PersonmsgData?
+    var arrtitle : [String] = [String]()
+    var arrdetail : [String] = [String]()
+
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -49,6 +52,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             else {
                 stuid = personmsgData?.personmsg?.stu_id
                 stuname = personmsgData?.personmsg?.stu_name
+                manager.requestSerializer = zxf
+                manager.responseSerializer = fxz
+                let params : Dictionary<String,String> = ["stu_id" : stuid , "stu_name" : stuname]
+                //Get方法访问接口
+                manager.GET("http://www.szucal.com/api/1204/schedule.php?", parameters: params, success: {
+                    (operation: AFHTTPRequestOperation!,
+                    responseObject: AnyObject!) in
+                    //将返回的14天的课程数据的Json内容转为字典
+                    let responseDict = responseObject as! NSDictionary!
+                    //  print(responseDict)
+                    //判断，如果无返回数据则说明账号密码有误
+                    if(responseDict["schedule"] != nil)
+                    {
+                        let schedule1 = responseDict["schedule"] as! NSArray
+                        var i = 0;
+                        while(i<7){
+                            let courses1 = schedule1[i] as! NSDictionary
+                            let kecheng = courses1["courses"] as! NSArray
+                            for j in kecheng {
+                                let kecheng_name1 = j["course_name"] as! String
+                                let kecheng_teacher = j["professor"] as! String
+                                var flag : Int = 0
+                                for q in self.arrtitle {
+                                    if kecheng_name1 == q {
+                                        flag++
+                                    }
+                                }
+                                if flag == 0 {
+                                    self.arrtitle.append(kecheng_name1)
+                                    self.arrdetail.append(kecheng_teacher)
+                                }
+                            }
+                            i++
+                        }
+                        arrTitle = self.arrtitle
+                        arrDetail = self.arrdetail
+                    }
+                    else
+                    {
+                        let alert = UIAlertView(title: "警告", message: "您的账号密码有误", delegate: self, cancelButtonTitle: "OK")
+                        alert.show()
+                        //  self.deformationBtn.stopLoading()
+                    }
+                    
+                    }, failure: {(operation: AFHTTPRequestOperation!,
+                        error: NSError!) in
+                        //Handle Error
+                        print(error)
+                        print(operation.responseString)
+                        
+                })
+
                 var storyboard = UIStoryboard.init(name: "Main", bundle: nil)
                 let controller1 : UITabBarController = storyboard.instantiateViewControllerWithIdentifier("seccesslogin") as! UITabBarController
                 self.window?.rootViewController = controller1
