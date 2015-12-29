@@ -169,6 +169,21 @@ class personalView : UITableViewController , UIActionSheetDelegate , UIImagePick
         if indexPath.section == 3 && indexPath.row == 0 {
             self.personitem = Personmsgitem(stu_name: "", stu_id: "")
             self.persondata.saveCheckLists(personitem!)
+            Mondaycourse.removeAll()
+            Mondaytime.removeAll()
+            Mondaylocal.removeAll()
+            Tuesdaycourse.removeAll()
+            Tuesdaytime.removeAll()
+            Tuesdaylocal.removeAll()
+            Wendesdaycourse.removeAll()
+            Wendesdaytime.removeAll()
+            Wendesdaylocal.removeAll()
+            Thursdaycourse.removeAll()
+            Thursdaytime.removeAll()
+            Thursdaylocal.removeAll()
+            Fridaycourse.removeAll()
+            Fridaylocal.removeAll()
+            Fridaytime.removeAll()
             let controller : loginViewController = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController") as! loginViewController
             self.presentViewController(controller, animated: true, completion: nil)
         }

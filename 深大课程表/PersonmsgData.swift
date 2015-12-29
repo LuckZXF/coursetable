@@ -40,7 +40,7 @@ class PersonmsgData : NSObject {
     }
     
     func dataFilePath()->String{
-        return self.documentsDirectory().stringByAppendingString("/Personmsg67.plist")
+        return self.documentsDirectory().stringByAppendingString("/Personmsg68.plist")
     }
     
     func loadChecklistItems(){

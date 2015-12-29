@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //var storyboard = UIStoryboard(name: "Main", bundle: nil)
         dataModel = DataModel()
         personmsgData = PersonmsgData()
+        
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
         self.window?.backgroundColor = UIColor.whiteColor()
         self.window?.makeKeyAndVisible()
@@ -54,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 stuname = personmsgData?.personmsg?.stu_name
                 manager.requestSerializer = zxf
                 manager.responseSerializer = fxz
+                
                 let params : Dictionary<String,String> = ["stu_id" : stuid , "stu_name" : stuname]
                 //Get方法访问接口
                 manager.GET("http://www.szucal.com/api/1204/schedule.php?", parameters: params, success: {
@@ -89,12 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         arrTitle = self.arrtitle
                         arrDetail = self.arrdetail
                     }
-                    else
-                    {
-                        let alert = UIAlertView(title: "警告", message: "您的账号密码有误", delegate: self, cancelButtonTitle: "OK")
-                        alert.show()
-                        //  self.deformationBtn.stopLoading()
-                    }
+                    
                     
                     }, failure: {(operation: AFHTTPRequestOperation!,
                         error: NSError!) in
