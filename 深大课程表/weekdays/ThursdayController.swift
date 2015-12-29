@@ -21,7 +21,7 @@ class ThursdayController : UIViewController,UITableViewDelegate,UITableViewDataS
         tv  = UITableView(frame: CGRectMake(0, 0, kwidth, kheight-64-64))
         self.tv.delegate = self
         self.tv.dataSource = self
-        setuptable()
+       // setuptable()
         self.tv.tableHeaderView = view1
         // self.view.addSubview(view)
         
@@ -81,6 +81,7 @@ class ThursdayController : UIViewController,UITableViewDelegate,UITableViewDataS
                 if(Thursdaycourse.count >= 0){
                     
                     self.timer?.invalidate()
+                    self.setuptable()
                     self.tv.reloadData()
                     self.view.addSubview(self.tv)
                 }
@@ -100,7 +101,7 @@ class ThursdayController : UIViewController,UITableViewDelegate,UITableViewDataS
     
     func setuptable(){
         var coursecount : UILabel = UILabel(frame: CGRectMake(kwidth/2-36,10,72,72))
-        coursecount.text = "4"
+        coursecount.text = "\(Thursdaycourse.count)"
         coursecount.textColor = UIColor.whiteColor()
         coursecount.font = UIFont.systemFontOfSize(72)
         coursecount.textAlignment = .Center
